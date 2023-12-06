@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tl3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo-tipo" src="https://img1.gratispng.com/20180621/leq/kisspng-green-logo-cadevre-eco-friendly-5b2b6889851594.7230672015295714655451.jpg" alt="">
+            <h1>Carrinho de compras</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="parte-1">
+            <div id="carrinho"></div>
+            <div class="pagamento">
+                <h1>Deseja finalizar suas compras?</h1>
+                <a href="">Finaliza Pedido</a>
+                <a href="index.html">Continuar comprando </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="nato">
+            <div class="nadion">
+                <h3>Contatos</h3>
+                <p> 
+                    <i class='bx bx-map'></i> Endereço:Rua das Frutas, 89 <br>
+                    Cidade: Recife, Estado: PE <br>
+                    <i class='bx bx-phone'></i> Telefone:(+55) 081 98555-4555 <br>
+                    <i class='bx bx-envelope' ></i> Email:Frutaria@gmail.com <br>
+                </p>
+            </div>
+            <div class="nadion">
+                <h3>Rede sociais</h3>
+                <p>Siga nos nas Redes Sociais</p>
+                <div class="rede-social">
+                    <a href=""><i class='bx bxl-whatsapp-square rd'></i></a>
+                    <a href=""><i class='bx bxl-instagram-alt rd'></i></a>
+                    <a href=""><i class='bx bxl-twitter rd'></i></a>
+                </div>    
+            </div>
+            <div class="nadion">
+                <h3>Cadastrar Email</h3>
+                <p> Receber todas novidades da nossa frutaria em seu Email</p>
+                <input type="text">
+                <button>Cadastrar</button>
+
+            </div>
+
+        </div>
+    </footer>
+    
+
+    <script>
+
+        function exibirItensDoCarrinho() {
+            const carrinhoDiv = document.getElementById('carrinho');
+            carrinhoDiv.innerHTML = '';
+
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+            let total = 0;
+
+            carrinho.forEach((item, index) => {
+                carrinhoDiv.innerHTML += `
+                    <div class="item-carrinho">
+                        <img src="${item.imagem}" alt="${item.nome}" class="foto-do-produto">
+                        <p>R$ ${item.preco.toFixed(2)}</p>
+                        <h3>${item.nome}</h3>
+                        <button onclick="removerItemDoCarrinho(${index})"><i class='bx bx-trash'></i></button>
+                    </div>
+                `;
+                total += item.preco;
+            });
+
+            carrinhoDiv.innerHTML += `<p class="total" >Total: R$ ${total.toFixed(2)}</p>`;
+        }
+
+        function removerItemDoCarrinho(index) {
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+            if (index >= 0 && index < carrinho.length) {
+                carrinho.splice(index, 1);
+                
+                localStorage.setItem('carrinho', JSON.stringify(carrinho));
+                
+                exibirItensDoCarrinho();
+            }
+        }
+        exibirItensDoCarrinho();
+    </script>
+</body>
+</html>

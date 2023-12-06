@@ -1,0 +1,258 @@
+
+header{
+
+}
+
+
+nav{
+    background-color: rgb(49, 255, 135);
+    height: 150px;
+    margin-top: 10px;
+    border: black solid 4px;
+
+}
+
+body{
+    background-color: rgb(76, 76, 76);
+
+}
+#carrinho{
+
+}
+nav h1{
+    padding: 25px;
+    font-size: 30px;
+}
+main{
+    margin: 5px 50px;
+}
+
+.item-carrinho{
+    background-color: rgb(49, 255, 135);
+    margin: 15px;
+    height: 160px;
+    border: black solid 3px;
+    border-radius: 7px;
+    
+}
+.item-carrinho button{
+    position: relative;
+    top: -250px;
+    left: 950px;
+    background-color: rgb(76, 76, 76);
+    color: bisque;
+    width: 50px;
+    height: 50px;
+    font-size: 45px;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 10px;
+    outline: none;
+    border: black solid 3px;
+}
+.item-carrinho button :active{
+    background-color: red;
+    border-radius: 7px;
+}
+.total{
+    background-color: rgb(49, 255, 135);
+    font-size: 20px;
+    border: black solid 3px;
+
+}
+
+.parte-1 h1{
+
+}
+
+.item-carrinho img{
+    width: 150px;
+    height: 150px;
+    border: black solid 5px;
+    margin-top: 2px;
+}
+.item-carrinho h3{
+    font-size: 30px;
+    margin-left: 250px;
+    position: relative;
+    top: -240px;
+}
+.item-carrinho p{
+    position: relative;
+    top: -150px;
+    
+    margin-left: 250px;
+}
+.pagamento{
+    display: flex;
+    background-color: rgb(49, 255, 135);
+    border: black solid 3px;
+    border-radius: 7px;
+    max-width: 5450px;
+    min-width: 500px;
+    justify-content: center;
+}
+
+nav h1{
+    margin-left: 150px;
+    margin-top: -120px;
+}
+
+h1{
+    margin: 15px;
+}
+.pagamento a{
+    text-decoration: none;
+    background-color: antiquewhite;
+    border-radius: 7px;
+    color: black;
+    width: 200px;
+    height: 45px;
+    margin: 35px 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 2px 3px 5px black;
+
+}
+img{
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin: 40px;
+}
+footer{
+    margin: 5px 80px;   
+    background-color: rgb(49, 255, 135);
+    height: 270px;
+    border: black solid 3px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+}
+.nadion{
+    float: left;
+    margin: 10px -15px;
+    padding: -10px 40px;
+    width: 420px;
+}
+footer h3{
+    margin: 10px 60px;
+    padding: 10px 45px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+footer p{
+    padding: 20px 90px;
+    margin: 5px;
+    font-size: 15px;
+    margin-top: 4px;
+}
+.nato{
+    display: inline-flex;
+    
+}
+.nadion h3{
+    margin-left: 10px;
+    text-align: center;
+}
+.nadion i{
+    font-size: 25px;
+    margin-top: 1px;
+}
+.nadion input{
+    margin-left: 68px;    
+    border-radius: 7px;
+    outline: none;
+    border: black solid 3px;
+    min-width: 220px;
+
+}
+
+
+.rede-social{
+    padding: -50px 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+}
+.rede-social i{
+    color: black;
+    text-align: center;
+    margin-left: 15px;
+    font-size: 45px;
+    border-radius: 45px;
+}
+.nadion button{
+    background-color: rgb(0, 255, 55);
+    outline: none;
+    border: black solid 3px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+
+
+@media (max-width:768px){
+
+
+
+    .parte-1{
+        width: 130%;
+    }
+    nav{
+        width: 120%;
+    }
+    
+    .nato{
+        display: block;
+        margin: -26px;
+
+    }
+    .nadion input{
+        display: flex;
+        margin-left: 82px;
+    }
+    body{
+        /*overflow-x: hidden;*/
+    }
+    footer{
+        height: 680px;
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    main{
+        margin: 5px;
+
+    }
+    .item-carrinho button{
+        position: relative;
+        left: 350px;
+
+    }
+    .pagamento{
+        display: flex;
+        max-width: 5450px;
+        min-width: 450px;
+    }
+    .pagamento h1{
+        font-size: 25px;
+        width: 200px;
+        margin-left: 45px;
+    }
+    .pagamento a{
+        margin-left: -45px;
+        margin-top: 45px;
+        display: block;
+        margin: 25px;
+    }
+    .nadion button{
+        margin-left: 165px;
+        margin-top: 15px;
+    }
+
+}

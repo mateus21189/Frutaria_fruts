@@ -1,0 +1,358 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+nav{
+    background-color: rgb(49, 255, 135);
+    height: 150px;
+    border: black solid 3px;
+    max-width: 5450px;
+    min-width: 500px;
+}
+
+.foto-do-produto{
+    width: 158px;
+    height: 152px;
+    display: flex;
+    margin: -1px;
+    border: 2px solid black;
+    border-radius: 7px;
+    
+}
+.logo-tipo{
+    width: 70px;
+    height: 70px;
+    border-radius: 45px;
+    margin: -15px 35px;
+    border: #000000 solid 2px;
+}
+#carrinho{
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    margin-right: 130px;
+}
+
+.skt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    margin: 5px 80px;
+    
+}
+
+.product i{
+    font-size: 22px;
+}
+.product p{
+    text-align: center;
+}
+.product{
+    position: relative;
+    width: 160px;
+    height: 260px;
+    background-color: rgb(49, 255, 135);
+    margin: 20px 15px;
+    display: inline-block;   
+    border: 5px;
+    border-color:blueviolet;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.botao-adicionar{
+    outline: none;
+    background-color: rgb(0, 255, 55);
+    border: none;
+    margin: 10px 50px;
+    padding: 8px 15px;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 26px;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+
+}
+.botao-adicionar :hover{
+    transform: scale(1.35);
+}
+
+#quantidade-no-icone{
+    position: relative;
+    font-size: 30px;
+    top: -75px;
+    left: 19px;
+    background-color: black;
+    border-radius: 5px;
+    width: 50%;
+    color: antiquewhite;
+
+}
+
+body{
+    background-color: rgb(76, 76, 76);
+
+}
+.icone-espacamento{
+    margin-right: 25px;
+}
+
+.icones{
+    margin-top: -70px;
+    font-size: 38px;
+    display: flex;
+    justify-content: end;
+}
+a{
+    color: black;
+}
+#procura-itens{
+    width: 600px;
+    height: 30px;
+    margin: -100px;
+    border-radius: 10px;
+    outline: none;
+    border: #000000 solid 2px;
+}
+nav p{
+    text-align: center;
+}
+.product h1{
+    font-size: 19px;
+    text-align: center;
+}
+.product h2{
+    background-color: transparent;
+    border: black solid 1px;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    margin: 5px 80px;   
+    background-color: rgb(49, 255, 135);
+    height: 270px;
+    border: black solid 3px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+
+}
+.nadion{
+    float: left;
+    margin: 10px -15px;
+    padding: -10px 40px;
+    width: 420px;
+}
+
+footer h3{
+    margin: 10px 60px;
+    padding: 10px 45px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+footer p{
+    padding: 20px 90px;
+    margin: 5px;
+    font-size: 15px;
+    margin-top: 4px;
+}
+.nato{
+    display: inline-flex;
+    
+}
+.nadion h3{
+    margin-left: 10px;
+    text-align: center;
+}
+.nadion i{
+    font-size: 25px;
+    margin-top: 1px;
+}
+.rd{
+    font-size: 35px;
+    margin: 15px ;
+}
+.nadion input{
+
+    margin-left: 70px;    
+    border-radius: 7px;
+    outline: none;
+    border: black solid 3px;
+    min-width: 220px;
+
+}
+#tipoFrutaMensagem{
+    font-size: 35px;
+    background-color: rgb(0, 255, 55);
+    border-radius: 15px;
+    border: #000000 solid 3px;
+}
+
+.rede-social{
+    padding: -50px 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+}
+.rede-social i{
+    margin-left: -15px;
+    font-size: 45px;
+    border-radius: 45px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin-top: 35px;
+    margin-right: 1rem;
+}
+
+.nav-links li:hover a {
+
+    background-color:transparent;
+    border: #000000 solid 3px;
+    border-radius: 5px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.nadion button{
+    background-color: rgb(0, 255, 55);
+    outline: none;
+    border: black solid 3px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+/*---------Responsividade-------------------------------*/
+
+@media (max-width:600px){
+    nav{
+        height: 130px;
+        /*flex-direction: column;*/
+        text-align: start;
+        width: 100%;
+    }
+    .logo-tipo{
+        position: relative;
+        top: 15px;
+        left: -19px;
+    }
+    .icone-espacamento{
+        margin-right: 1px;
+    }
+    .usua{
+        margin-right: -78px;
+    }
+    #carrinho{
+        margin-right: 95px;
+    }
+    .skt{
+        display: flex;
+        justify-content: end;
+        max-width: 55px;
+        position: relative;
+        left: 200px;
+        cursor: pointer;
+    }
+    .icones{
+        display: flex;
+        margin-top: -45px;
+    }
+    
+    ul{
+        display: none;
+    }
+    li{
+        border-bottom: 2px solid black ;
+    }
+    #listraProdutos{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 98px;
+        justify-content: center;
+    }
+    main{
+
+        margin: 10px 50px;
+    }
+
+    body{
+        overflow-x: hidden;
+        width: 500px;
+    }
+
+    footer{
+        height: 610px;
+    }
+    .product{
+
+    }
+    .nato{
+        display: block;
+        margin-top: -5px;
+        margin: -19px;
+    }
+    .nadion input{
+        margin-left: 65px;
+    }
+    .nadion{
+        margin-top: -10px;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 40px;
+        background: rgb(0, 255, 55);
+        width: 80%;
+        height: 300px;
+        border-radius: 15px;
+        text-align: center;
+        border: #000000 solid 3px;
+        margin: 25px;
+        margin-top: 55px;
+    }
+
+    .nav-links.active {
+        display: flex;
+        margin-top: 45px;
+        align-items: center;
+        text-align: center;
+        z-index: 3;
+    }
+
+    .hamburger{
+        display: flex;
+        justify-content: end;
+        margin-left: 444px;
+        margin-top: -17px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 45px;
+        cursor: pointer;
+
+    }
+
+}
